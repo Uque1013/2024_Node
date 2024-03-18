@@ -8,3 +8,6 @@ const cathy = {
 console.log(cathy)
 console.log(cathy.name)
 console.log(cathy["name"])
+
+delete cathy.skills
+console.log(cathy)
