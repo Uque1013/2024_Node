@@ -6,8 +6,14 @@ const middle1 = require('./my_modules/middle1')
 // arg로 경로를 지정하지 않으면, 모든 경로에 대해 처리
 app.use(middle1)
 
+app.get('/', (req, res, next)=> {
+    console.log('Hello World')
+    next()
+})
+
+
 app.get('/', (req, res)=> {
-    res.send('Hello World')
+    console.log('swag')
 })
 
 
